@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Gateway Dashboard</title>
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WhatsApp Gateway Dashboard</h1>
+      <p class="subtitle">All active WhatsApp sessions. Each card is one company number.</p>
+      <button id="ui-logout-button" class="button button-danger button-sm">Sign Out</button>
+    </header>
+
+    <section id="sessions-container">
+      <p id="loading-text">Loading sessions…</p>
+    </section>
+
+    <section class="card log-card">
+      <h2>Activity Log</h2>
+      <pre id="log-output">Ready.</pre>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

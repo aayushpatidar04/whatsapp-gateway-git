@@ -1,0 +1,32 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+package-lock.json
+
+# ── Environment — NEVER commit secrets to git ─────────────────────────────────
+.env.local
+.env.production
+.env.staging
+
+# ── WhatsApp session credentials — contains private keys, never commit ─────────
+src/auth_info/
+!src/auth_info/.gitkeep
+
+# ── Runtime data ──────────────────────────────────────────────────────────────
+queue.json
+logs/
+!logs/.gitkeep
+temp_uploads/
+!temp_uploads/.gitkeep
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── PM2 ───────────────────────────────────────────────────────────────────────
+.pm2/

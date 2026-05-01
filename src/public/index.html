@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Gateway Login</title>
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WhatsApp Gateway Login</h1>
+      <p class="subtitle">Enter your credentials to access the QR login dashboard.</p>
+    </header>
+
+    <section class="card login-card">
+      <h2>Administrator Login</h2>
+      <form id="login-form" class="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="admin" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" required />
+
+        <button type="submit" class="button">Sign In</button>
+      </form>
+      <p id="login-error" class="error-text"></p>
+    </section>
+  </div>
+
+  <script src="/login.js"></script>
+</body>
+</html>

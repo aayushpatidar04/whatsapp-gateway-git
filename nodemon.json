@@ -1,0 +1,9 @@
+{
+    "watch": ["src"],
+    "ignore": ["src/auth_info", "queue.json", "logs", "temp_uploads", "node_modules"],
+    "ext": "js",
+    "delay": 500,
+    "env": {
+        "NODE_ENV": "development"
+    }
+}
