@@ -3,6 +3,7 @@ node_modules/
 package-lock.json
 
 # ── Environment — NEVER commit secrets to git ─────────────────────────────────
+.env
 .env.local
 .env.production
 .env.staging

@@ -13,8 +13,8 @@ module.exports = {
             env: {
                 NODE_ENV:                 'production',
                 PORT:                     '3000',
-                CRM_URL:                  'http://127.0.1:8000',
-                // CRM_URL:                  'https://crm.intouchsoftware.co.in',
+                // CRM_URL:                  'http://127.0.1:8000',
+                CRM_URL:                  'https://crm.arihantcapital.com',
                 GATEWAY_SECRET:           'aayush-patidar',
                 GATEWAY_UI_USER:          'admin@intouchconnect.com',
                 GATEWAY_UI_PASSWORD:      'Aayush@123',
