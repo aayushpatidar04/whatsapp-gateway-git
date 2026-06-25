@@ -389,6 +389,7 @@ async function connectWhatsApp(sessionId) {
             cachedBaileysVersion = result.version;
             logger.info(`Baileys protocol version: ${cachedBaileysVersion.join('.')}`);
         } catch {
+            logger.warn(`Version fetch failed, using modern fallback. Error: ${err.message}`);
             cachedBaileysVersion = [2, 3000, 1023498599];
         }
     }
@@ -428,6 +429,7 @@ async function connectWhatsApp(sessionId) {
         if (myGen !== session.generation) return;
 
         const { connection, lastDisconnect, qr } = update;
+
 
         if (qr) {
             session.qrCodeData = await qrcodeImage.toDataURL(qr);
